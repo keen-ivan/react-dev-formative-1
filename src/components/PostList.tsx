@@ -42,4 +42,6 @@ function PostList() {
   );
 }
 
-export default withLogger(PostList, "PostList");
+const LoggedPostList = withLogger(PostList, "PostList");
+
+export default LoggedPostList;

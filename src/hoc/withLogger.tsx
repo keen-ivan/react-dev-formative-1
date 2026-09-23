@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import type { ComponentType } from "react";
 
-function withLogger<P>(
+function withLogger<P extends object>(
   WrappedComponent: ComponentType<P>,
   componentName: string
 ) {
