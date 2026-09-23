@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>Dev Insights</h1>
+      <h1 style={{ letterSpacing: "1px" }}>Dev Insights</h1>
 
       <nav>
         <a href="#new-post">New Post</a>

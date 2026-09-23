@@ -33,7 +33,7 @@ function PostList() {
   ];
 
   return (
-    <section>
+    <section className="post-list">
       {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}

@@ -6,14 +6,18 @@ interface PostProps {
 
 function Post({ post }: PostProps) {
   return (
-    <article>
-      <h2>{post.title}</h2>
+    <article className={`post ${post.isNew ? "new-post" : ""}`}>
+      <h2>
+        {post.title}
 
-      <p>By {post.author}</p>
+        {post.isNew && <span className="new-badge">NEW!</span>}
+      </h2>
 
-      <p>{post.content}</p>
+      <p className="post-author">By {post.author}</p>
 
-      <small>{post.date}</small>
+      <p className="post-content">{post.content}</p>
+
+      <small className="post-date">{post.date}</small>
     </article>
   );
 }
